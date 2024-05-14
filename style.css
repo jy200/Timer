@@ -1,0 +1,36 @@
+.title {
+    text-align: center;
+    font-weight: 700;
+    color:red;
+}
+
+.timer-list {
+    display:table;
+}
+
+.timer-clock{
+    margin: 1rem;
+    border: 0.25rem solid rgba(0,0,0,0.1);
+}
+
+.timer-text{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.add-timer-box{
+    margin: 1rem;
+    display:flex;
+    vertical-align: bottom;
+}
+
+.add-time-slot{
+    display:inline-block;
+    max-width: 30px;
+    
+    max-height: 30px;
+}
+.add-time-text{
+    display:inline-block;
+    font-size: 30px;
+}
