@@ -8,27 +8,24 @@
 </head>
 <body>
     <h1 class="title">Timer</h1>
-    
+    <div class="add-timer">
+        <button class="add-timer-button">Add Timer</button>
+    </div>
     <div class="add-timer-box">
-        <input type="text" id="time-slot-1" class="add-time-slot"/>
+        <input type="text" id="time-slot-1" class="add-time-slot" value="00"/>
         <div class="add-time-text">:</div>
-        <input type="text" id="time-slot-2" class="add-time-slot"/>
+        <input type="text" id="time-slot-2" class="add-time-slot" value="00"/>
         <div class="add-time-text">:</div>
-        <input type="text" id="time-slot-3" class="add-time-slot"/>
-       
+        <input type="text" id="time-slot-3" class="add-time-slot" value="00"/>
     </div>
     <div class="timer-list">
-        <!-- <input type="text" maxlength="6" pattern="\d{6}" required/> -->
-        <div class="timer-clock">
-            <div class="timer-text">
-                0:00:00
-            </div>
-        </div>
-        <div class="timer-clock">
-            <div class="timer-text">
-                0:00:00
-            </div>
-        </div>
+        <!-- <div class="timer-clock">
+            <div class="timer-clock-1">00</div>
+            <div>:</div>
+            <div class="timer-clock-2">00</div>
+            <div>:</div>
+            <div class="timer-clock-3">00</div>
+        </div> -->
     </div>
     <script src="main.js"></script>
 </body>
