@@ -1,4 +1,3 @@
-// const slot1 = document.querySelector("#time-slot-1");
 const slot1 = document.getElementById('time-slot-1');
 const slot2 = document.querySelector("#time-slot-2");
 const slot3 = document.querySelector("#time-slot-3");
@@ -44,11 +43,25 @@ slot3.addEventListener('input', (event) =>{
     }
 });
 
+// Events for starting or reseting timer input boxes
 const addTimerBtn = document.querySelector(".add-timer-button");
 addTimerBtn.addEventListener('click', ()=>{
     createNewTimer(slot1.value, slot2.value, slot3.value);
 });
+const resetTimerBtn = document.querySelector(".reset-timer-button");
+resetTimerBtn.addEventListener('click', ()=>{
+    slot1.value = '00';
+    slot2.value = '00';
+    slot3.value = '00';
+});
 
+// Clear timer list
+const clearbtn = document.getElementById('clear-list')
+clearbtn.addEventListener('click', ()=>{
+    const parent = document.querySelector('.timer-list');
+    parent.textContent = '';
+    parent.appendChild(clearbtn);
+});
 
 var clocks = [];
 function createNewTimer(time1,time2,time3){
